@@ -8,6 +8,7 @@
 
     settings = {
       qylock-theme = "enfield";
+      shell = "nushell";
     };
 
     networking.hostName = "oracle";

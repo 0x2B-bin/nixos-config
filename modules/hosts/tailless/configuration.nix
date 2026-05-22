@@ -9,6 +9,7 @@
 
     settings = {
       qylock-theme = "wuwa";
+      shell = "nushell";
     };
 
     powerManagement.cpuFreqGovernor = "performance";

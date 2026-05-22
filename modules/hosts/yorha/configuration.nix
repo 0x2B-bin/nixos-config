@@ -18,6 +18,7 @@
     settings = {
       qylock-theme = "nier-automata";
       qylock-sddm-font = ../../../fonts/FOT-Rodin-Pro-DB.otf;
+      shell = "nushell";
     };
 
     hardware.graphics = {

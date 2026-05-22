@@ -39,6 +39,14 @@
           ];
           default = "yorha";
         };
+
+        shell = lib.mkOption {
+          type = lib.types.enum [
+            "zsh"
+            "nushell"
+          ];
+          default = "zsh";
+        };
       };
     };
 }

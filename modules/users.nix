@@ -3,14 +3,13 @@
     {
       config,
       pkgs,
-      username,
       ...
     }:
     {
       config = {
         users.users.${config.settings.username} = {
           isNormalUser = true;
-          shell = pkgs.zsh;
+          shell = pkgs.${config.settings.shell};
           extraGroups = [
             "wheel"
             "docker"

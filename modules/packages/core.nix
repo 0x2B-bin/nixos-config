@@ -11,6 +11,7 @@
         nh
         git
         zsh
+        nushell
         wget
         neovim
         fastfetch
