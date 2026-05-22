@@ -16,6 +16,12 @@
         $env.config = {
           use_ansi_coloring: 'auto'
           show_banner: false
+
+          cursor_shape: {
+            emacs: line          # This controls the default/insert mode if not using vi keys
+            vi_insert: line      # Vertical line for Vi insert mode
+            vi_normal: block     # Block for Vi normal mode
+          }
         }
       '';
     };
