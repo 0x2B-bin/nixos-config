@@ -5,6 +5,10 @@
       openFirewall = true;
     };
 
+    users.users.jellyfin = {
+      extraGroups = [ "video" "render" ];
+    };
+
     fileSystems."/var/lib/jellyfin/media/anime" = {
       device = "/home/${config.settings.username}/Videos/anime";
       fsType = "none";
