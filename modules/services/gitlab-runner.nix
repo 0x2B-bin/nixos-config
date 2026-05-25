@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.gitlab-runner = { config, pkgs, ... }: {
+  flake.nixosModules.gitlab-runner = { config, lib, pkgs, ... }: {
     services.gitlab-runner = {
       enable = true;
 
@@ -17,6 +17,12 @@
           executor = "shell";
         };
       };
+    };
+
+    systemd.services.gitlab-runner.serviceConfig = {
+      DynamicUser = lib.mkForce false;
+      User = lib.mkForce "gitlab-runner";
+      Group = lib.mkForce "developer";
     };
 
     users.groups.developer = {};
