@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.gitlab-runner = { pkgs, ... }: {
+  flake.nixosModules.gitlab-runner = { config, pkgs, ... }: {
     services.gitlab-runner = {
       enable = true;
 
@@ -17,6 +17,16 @@
           executor = "shell";
         };
       };
+    };
+
+    users.groups.developer = {};
+
+    users.users = {
+      gitlab-runner = {
+        isSystemUser = true;
+        group = "developer";
+      };
+      ${config.settings.username}.extraGroups = [ "developer" ];
     };
   };
 }
