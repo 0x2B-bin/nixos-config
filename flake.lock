@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779263466,
-        "narHash": "sha256-NGmXpJ8YNWTTIfo9bPJ2sWsr91Rmpf8Cm0D1Lx6A0BU=",
+        "lastModified": 1779862531,
+        "narHash": "sha256-+7sI5s/cVE7jBVcn/hYB0un+cath62UjdFN3lzx38Bk=",
         "owner": "0x2B-bin",
         "repo": "AniCursors",
-        "rev": "404849a4f6ba55e98e3f25ca273ace0671b6e981",
+        "rev": "7af6ceacc35bfea3e84a00f8126c427f96c64bd4",
         "type": "github"
       },
       "original": {
