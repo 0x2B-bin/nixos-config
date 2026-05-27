@@ -3,4 +3,5 @@ pkill -SIGUSR1 kitty
 wal -i ./acheron.png -n -s -t --backend colorz
 dconf write /org/gnome/desktop/interface/cursor-theme "'acheron_blz'"
 pkill quickshell
+makoctl reload
 niri msg action spawn -- "quickshell"

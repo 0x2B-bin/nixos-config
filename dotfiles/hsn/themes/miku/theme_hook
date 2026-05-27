@@ -3,4 +3,5 @@ pkill -SIGUSR1 kitty
 wal -i ./miku.png -n -s -t
 dconf write /org/gnome/desktop/interface/cursor-theme "'miku_blz'"
 pkill quickshell
+makoctl reload
 niri msg action spawn -- "quickshell"
