@@ -6,6 +6,7 @@
       shellAliases = {
         c = "clear";
         n = "nvim";
+        ll = "ls -la";
         sshk = "kitty +kitten ssh";
         ff = "fastfetch";
         po = "poweroff";
