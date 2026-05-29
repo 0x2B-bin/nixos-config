@@ -30,6 +30,8 @@
     users.users = {
       gitlab-runner = {
         isSystemUser = true;
+        createHome = true;
+        home = "/var/lib/gitlab-runner";
         group = "developer";
       };
       ${config.settings.username}.extraGroups = [ "developer" ];

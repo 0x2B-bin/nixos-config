@@ -8,6 +8,7 @@
       sddm
       plymouth
       pipewire
+      security-packages
       grub
       fonts
       bluetooth
