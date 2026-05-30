@@ -15,6 +15,7 @@
             "docker"
             "networkmanager"
             "wireshark"
+            "input"
           ];
         };
       };
