@@ -4,7 +4,7 @@
 
 { self, ... }:
 {
-  flake.nixosModules.yorha-configuration = {
+  flake.nixosModules.yorha-configuration = { config, pkgs, ... }: {
     imports = with self.nixosModules; [
       desktop-profile
       remote-builder
@@ -25,6 +25,13 @@
       enable = true;
       enable32Bit = true;
     };
+
+    hardware.uinput.enable = true;
+    users.users.${config.settings.username} = {
+      extraGroups = [ "uinput" ];
+    };
+
+    services.udev.packages = with pkgs; [ game-devices-udev-rules ];
 
     boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
 
