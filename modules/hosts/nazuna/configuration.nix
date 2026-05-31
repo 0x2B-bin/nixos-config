@@ -1,15 +1,19 @@
 { self, ... }:
 
 {
-  flake.nixosModules.nazuna-configuration = { pkgs, ... }: {
+  flake.nixosModules.nazuna-configuration = { inputs, config, pkgs, ... }: {
     imports = with self.nixosModules; [
       server-profile
-      gitlab-runner
+      inputs.auc-flake.nixosModules.gitlab-runner
     ];
 
     environment.sessionVariables = {
       KOUBOTTO_DIR = "/srv/auc-deployment";
     };
+
+    services.auc.gitlab-runner.enable = true;
+
+    users.users.${config.settings.username}.extraGroups = [ "developer" ];
 
     settings = {
       shell = "nushell";

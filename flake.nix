@@ -56,6 +56,11 @@
       url = "github:0x2B-bin/qylock-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    auc-flake = {
+      url = "git+ssh://git@gitlab.com/animeuc/nixos-modules.git";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

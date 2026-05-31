@@ -21,6 +21,26 @@
         "type": "github"
       }
     },
+    "auc-flake": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1780210870,
+        "narHash": "sha256-gfWXiBAO0689jrw8LXJrtRf9e7+Q5HCYSS09u9FNTdY=",
+        "ref": "refs/heads/main",
+        "rev": "0d776166900aff3ac9b27f9b8359b7ea10ad19f3",
+        "revCount": 3,
+        "type": "git",
+        "url": "ssh://git@gitlab.com/animeuc/nixos-modules.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@gitlab.com/animeuc/nixos-modules.git"
+      }
+    },
     "doomemacs": {
       "flake": false,
       "locked": {
@@ -510,6 +530,7 @@
     "root": {
       "inputs": {
         "anicursors": "anicursors",
+        "auc-flake": "auc-flake",
         "flake-parts": "flake-parts_2",
         "hatsune-miku-cursors": "hatsune-miku-cursors",
         "henshin": "henshin",
