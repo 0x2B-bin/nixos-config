@@ -5,6 +5,7 @@
       env
       zsh
       nushell
+      carapace
       starship
       tmux
       git-config
