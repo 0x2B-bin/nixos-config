@@ -366,12 +366,19 @@ layer-rule {
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
+
+blur {
+    passes 1
+    offset 1
+    noise 0.02
+    saturation 1
+}
+
 window-rule {
-    // This regular expression is intentionally made as specific as possible,
-    // since this is the default config, and we want no false positives.
-    // You can get away with just app-id="wezterm" if you want.
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
+    match app-id="kitty|emacs"
+    background-effect {
+        blur true
+    }
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
@@ -384,9 +391,13 @@ window-rule {
 }
 
 window-rule {
-    match app-id="discord"
+    match app-id="vesktop"
     opacity 0.9
     draw-border-with-background false
+
+    background-effect {
+        blur true
+    }
 }
 
 window-rule {
