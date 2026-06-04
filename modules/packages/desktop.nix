@@ -9,6 +9,7 @@
         audacity
         nwg-look
         steam
+        osu-lazer-bin
         protonplus
         pcsx2
         gamescope
