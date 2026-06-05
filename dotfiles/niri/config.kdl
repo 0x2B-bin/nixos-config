@@ -381,6 +381,13 @@ window-rule {
     }
 }
 
+window-rule {
+    match app-id="zen"
+    background-effect {
+        blur true
+    }
+}
+
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
     // This app-id regular expression will work for both:
