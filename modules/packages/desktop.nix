@@ -1,8 +1,6 @@
 {
   flake.nixosModules.desktop-packages = { pkgs, inputs, ... }:
     {
-      nixpkgs.overlays = [ inputs.niri-src.overlays.default ];
-
       environment.systemPackages = with pkgs; [
         vesktop
         aseprite
