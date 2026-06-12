@@ -7,6 +7,7 @@
         audacity
         nwg-look
         steam
+        jellyfin-desktop
         osu-lazer-bin
         protonplus
         pcsx2
