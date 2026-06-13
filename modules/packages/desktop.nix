@@ -6,13 +6,7 @@
         aseprite
         audacity
         nwg-look
-        steam
         jellyfin-desktop
-        osu-lazer-bin
-        protonplus
-        pcsx2
-        gamescope
-        lunar-client
         networkmanagerapplet
         pavucontrol
         ffmpeg
@@ -53,9 +47,7 @@
         firefox.enable = true;
         niri.enable = true;
         xwayland.enable = true;
-        gamescope.enable = true;
         wireshark.enable = true;
-        steam.enable = true;
       };
     };
 }

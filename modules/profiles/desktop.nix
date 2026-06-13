@@ -5,6 +5,7 @@
     imports = with self.nixosModules; [
       common-profile
       desktop-packages
+      gaming-packages
       sddm
       plymouth
       pipewire
