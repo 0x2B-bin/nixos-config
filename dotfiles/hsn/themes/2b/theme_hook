@@ -1,0 +1,7 @@
+awww img ./2b.png --transition-fps 60 --transition-type random
+pkill -SIGUSR1 kitty
+wal -i ./2b.png -n -s -t
+dconf write /org/gnome/desktop/interface/cursor-theme "'kurumi_blz'"
+pkill quickshell
+makoctl reload
+niri msg action spawn -- "quickshell"
