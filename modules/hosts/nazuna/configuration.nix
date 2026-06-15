@@ -5,6 +5,7 @@
     imports = with self.nixosModules; [
       server-profile
       inputs.auc-flake.nixosModules.gitlab-runner
+      inputs.auc-flake.nixosModules.git
     ];
 
     environment.sessionVariables = {
@@ -12,6 +13,7 @@
     };
 
     services.auc.gitlab-runner.enable = true;
+    programs.auc.git.enable = true;
 
     users.users.${config.settings.username}.extraGroups = [ "developer" ];
 
