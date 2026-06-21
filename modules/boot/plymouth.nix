@@ -10,7 +10,7 @@
           (pkgs.stdenv.mkDerivation {
             pname = "plymouth-theme-nier";
             version = "1.0";
-            src = ../dotfiles/plymouth/nier;
+            src = ../../dotfiles/plymouth/nier;
 
             dontUnpack = true;
 

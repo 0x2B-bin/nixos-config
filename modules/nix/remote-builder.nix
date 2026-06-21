@@ -21,7 +21,7 @@
           group = "remoteBuild";
           useDefaultShell = true;
 
-          openssh.authorizedKeys.keyFiles = [ ../keys/remotebuild.pub ];
+          openssh.authorizedKeys.keyFiles = [ ../../keys/remotebuild.pub ];
         };
 
         users.groups.remoteBuild = { };
