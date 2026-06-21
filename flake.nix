@@ -15,6 +15,7 @@
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
     };
 
     snapsr = {
@@ -25,6 +26,7 @@
     henshin = {
       url = "github:0x2B-bin/henshin";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
     };
 
     pwngdb = {
@@ -40,16 +42,19 @@
     hatsune-miku-cursors = {
       url = "github:0x2B-bin/hatsune-miku-cursors-flake";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
     };
 
     anicursors = {
       url = "github:0x2B-bin/AniCursors";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
     };
 
     qylock = {
       url = "github:0x2B-bin/qylock-flake";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
     };
 
     auc-flake = {
