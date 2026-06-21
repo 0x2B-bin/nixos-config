@@ -13,6 +13,7 @@
       grub
       fonts
       bluetooth
+      xdg
     ];
 
     programs.dconf.enable = true;
