@@ -1,0 +1,10 @@
+pragma Singleton
+
+import QtQuick
+
+QtObject {
+    readonly property color pcolor: "#d6575a"
+    readonly property color bgcolor: "#191717"
+    readonly property int fontSize: 13
+    readonly property string fontFamily: "JetBrainsMono Nerd Font"
+}
