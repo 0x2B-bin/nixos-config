@@ -1,6 +1,6 @@
 import QtQuick
 import Quickshell.Io
-import "../.."
+import "../../config.js" as Config
 
 Text {
     id: root
@@ -37,8 +37,8 @@ Text {
             return "󰖪 " + ssid
         }
     }
-    font.family: Style.fontFamily
-    font.pixelSize: Style.fontSize
+    font.family: Config.font.fontFamily
+    font.pixelSize: Config.font.fontSize
     font.bold: true
     color: "#ffffff"
 }

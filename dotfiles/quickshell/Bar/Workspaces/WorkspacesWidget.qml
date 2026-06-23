@@ -2,7 +2,7 @@ import QtQuick
 import QtQuick.Layouts
 import Quickshell
 import Quickshell.Io
-import "../.."
+import "../../config.js" as Config
 
 Item {
     id: root
@@ -84,8 +84,8 @@ Item {
                 color: "white"
                 Layout.rightMargin: 2
                 Layout.alignment: Qt.AlignVCenter
-                font.family: Style.fontFamily
-                font.pixelSize: Style.fontSize
+                font.family: Config.font.fontFamily
+                font.pixelSize: Config.font.fontSize
                 font.bold: true
             }
 
@@ -97,7 +97,7 @@ Item {
 
                     Layout.preferredWidth: (isActiveWorkspace ? 30 : 20)
                     Layout.preferredHeight: (isActiveWorkspace ? 11 : 7)
-                    color: (isActiveWorkspace ? Style.pcolor : "#ffffff") || "#ffffff"
+                    color: (isActiveWorkspace ? Config.colors.color0 : "#ffffff") || "#ffffff"
                     radius: 50
 
                     Layout.alignment: Qt.AlignCenter

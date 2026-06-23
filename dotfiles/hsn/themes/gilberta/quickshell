@@ -1,10 +1,15 @@
-pragma Singleton
+const colors = {
+    bg: "#191717",
+    color0: "#be4a3a"
+}
 
-import QtQuick
+const font = {
+    fontFamily: "JetBrainsMono Nerd Font",
+    fontSize: 13
+}
 
-QtObject {
-    readonly property color pcolor: "#be4a3a"
-    readonly property color bgcolor: "#191717"
-    readonly property int fontSize: 13
-    readonly property string fontFamily: "JetBrainsMono Nerd Font"
+const notifications = {
+    timeout: 5000,
+    fontFamily: "JetBrainsMono Nerd Font",
+    fontSize: 15,
 }

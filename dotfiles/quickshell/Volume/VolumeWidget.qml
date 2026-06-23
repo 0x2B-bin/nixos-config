@@ -3,7 +3,7 @@ import Quickshell.Services.Pipewire
 import QtQuick.Layouts
 import QtQuick
 import Quickshell.Widgets
-import ".."
+import "../config.js" as Config
 
 Scope {
     id: root
@@ -89,7 +89,7 @@ Scope {
 
                             implicitWidth: parent.width * Math.min((Pipewire.defaultAudioSink?.audio.volume ?? 0)/1.5, 1.0)
                             radius: parent.radius
-                            color: Style.pcolor || "#ffffff"
+                            color: Config.colors.color0 || "#ffffff"
                         }
                     }
 

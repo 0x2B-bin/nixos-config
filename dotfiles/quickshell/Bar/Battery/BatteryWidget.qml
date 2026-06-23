@@ -1,7 +1,7 @@
 import Quickshell
 import Quickshell.Io
 import QtQuick
-import "../.."
+import "../../config.js" as Config
 
 Text {
     id: batteryWidget
@@ -21,12 +21,12 @@ Text {
     }
     
 
-    font.family: Style.fontFamily
-    font.pixelSize: Style.fontSize
+    font.family: Config.font.fontFamily
+    font.pixelSize: Config.font.fontSize
     font.bold: true
     color: {
         if (batteryCharging) {
-            return Style.pcolor || "#46e041"
+            return Config.colors.colors0 || "#46e041"
         }
         if (batteryLevel < 10) {
             return "#ff5555"

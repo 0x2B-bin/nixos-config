@@ -1,6 +1,6 @@
 import QtQuick
 import Quickshell.Services.Pipewire
-import "../.."
+import "../../config.js" as Config
 
 Text {
     id: root
@@ -14,8 +14,8 @@ Text {
         const icon = root.isMuted ? "󰝟 " : "󰕾 "
         icon + Math.round(Pipewire.defaultAudioSink?.audio.volume/1.5 * 100) + "%"
     }
-    font.family: Style.fontFamily
-    font.pixelSize: Style.fontSize
+    font.family: Config.font.fontFamily
+    font.pixelSize: Config.font.fontSize
     font.bold: true
     color: "#ffffff"
 

@@ -15,6 +15,8 @@
         packages = [
           pkgs.gcc
           pkgs.qt6.qtdeclarative
+          pkgs.eslint
+          pkgs.typescript-language-server
         ];
       };
     };

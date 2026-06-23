@@ -1,7 +1,7 @@
 import Quickshell
 import QtQuick
 import QtQuick.Layouts
-import ".."
+import "../config.js" as Config
 import "Time"
 import "Memory"
 import "Cpu"
@@ -35,7 +35,7 @@ PanelWindow {
         anchors.bottom: parent.bottom
 
         width: parent.width - 100
-        color: Style.bgcolor
+        color: Config.colors.bg
         radius: 12
         topLeftRadius: 0
         topRightRadius: 0

@@ -2,13 +2,13 @@ import QtQuick
 import QtQuick.Layouts
 import Quickshell.Widgets
 import Quickshell
-import "../.."
+import "../../config.js" as Config
 
 
 Text {
     text: " " + Mem.mem + "%"
-    font.pixelSize: Style.fontSize
-    font.family: Style.fontFamily
+    font.pixelSize: Config.font.fontSize
+    font.family: Config.font.fontFamily
     font.bold: true
     color: "#ffffff"
 }
