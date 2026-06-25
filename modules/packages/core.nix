@@ -26,6 +26,7 @@
         #self.packages."${pkgs.stdenv.hostPlatform.system}".fhs
         gcc
         gnumake
+        tree-sitter
         (python3.withPackages (
           p: with p; [
             requests
