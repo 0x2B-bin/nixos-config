@@ -20,11 +20,12 @@
         file
         btop
         unzip
+        ripgrep
         tailscale
         samba
-        #inputs.snapsr.packages."${pkgs.stdenv.hostPlatform.system}".default
         #self.packages."${pkgs.stdenv.hostPlatform.system}".fhs
         gcc
+        gnumake
         (python3.withPackages (
           p: with p; [
             requests
