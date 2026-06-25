@@ -26,7 +26,7 @@ Text {
     font.bold: true
     color: {
         if (batteryCharging) {
-            return Config.colors.colors0 || "#46e041"
+            return Config.colors.color0 || "#46e041"
         }
         if (batteryLevel < 10) {
             return "#ff5555"
