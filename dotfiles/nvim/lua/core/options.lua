@@ -6,4 +6,5 @@ vim.cmd("set number")
 vim.cmd("set relativenumber")
 vim.opt.clipboard = "unnamedplus"
 vim.opt.winborder = "rounded"
+vim.opt.scrolloff = 10
 vim.o.termguicolors = true

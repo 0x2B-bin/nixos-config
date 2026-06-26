@@ -12,7 +12,7 @@
   {
     devShells.x86_64-linux.default = pkgs.mkShellNoCC { 
       packages = with pkgs; [
-	lua-language-server  
+	    lua-language-server  
       ];
     };
   };
