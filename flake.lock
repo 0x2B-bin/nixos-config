@@ -133,11 +133,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779090515,
-        "narHash": "sha256-G5PRjTGNtDKd7MDcyhLz7ClG1cXsjynGkm3y3Ooc/nk=",
+        "lastModified": 1782795063,
+        "narHash": "sha256-rXEtzmo9RnVAd6mPYMgUz07fwYxfUnEj/sM/WAjXvTg=",
         "owner": "0x2B-bin",
         "repo": "henshin",
-        "rev": "49dfc4749fde3d8199aee63b3f63d54f415970d8",
+        "rev": "a15129a62178bce65f1299eb1853becb9c8984bb",
         "type": "github"
       },
       "original": {
