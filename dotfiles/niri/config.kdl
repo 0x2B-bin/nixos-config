@@ -375,16 +375,9 @@ blur {
 }
 
 window-rule {
-    match app-id="kitty|emacs"
+    match app-id="kitty|emacs|zen"
     background-effect {
         xray false
-        blur true
-    }
-}
-
-window-rule {
-    match app-id="zen"
-    background-effect {
         blur true
     }
 }
@@ -404,6 +397,7 @@ window-rule {
     draw-border-with-background false
 
     background-effect {
+        xray false
         blur true
     }
 }
