@@ -4,7 +4,7 @@
     imports = with self.homeModules; [
       kitty
       #easyeffects
-      doom-emacs
+      #doom-emacs
     ];
   };
 }

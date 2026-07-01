@@ -1,4 +1,3 @@
-
 import Quickshell
 import Quickshell.Wayland
 import QtQuick
@@ -25,7 +24,7 @@ PanelWindow {
     }
 
     Rectangle {
-        visible: false
+        visible: true
         anchors.fill: parent
         color: "#191717"
         topRightRadius: 7
