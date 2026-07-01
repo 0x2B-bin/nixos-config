@@ -1,0 +1,7 @@
+awww img ./miyabi.jpg --transition-fps 60 --transition-type random
+pkill -SIGUSR1 kitty
+wal -i ./miyabi.jpg -n -s -t
+dconf write /org/gnome/desktop/interface/cursor-theme "'miyabi_blz'"
+pkill quickshell
+makoctl reload
+niri msg action spawn -- "quickshell"

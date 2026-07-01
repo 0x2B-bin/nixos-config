@@ -1,0 +1,15 @@
+const colors = {
+    bg: "#191717",
+    color0: "#107ae2"
+}
+
+const font = {
+    fontFamily: "JetBrainsMono Nerd Font",
+    fontSize: 13
+}
+
+const notifications = {
+    timeout: 5000,
+    fontFamily: "JetBrainsMono Nerd Font",
+    fontSize: 15,
+}

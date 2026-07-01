@@ -83,10 +83,10 @@
         "type": "disk",
         "key": "   Disk"
     },
-    {
-        "type": "display",
-        "key": "   Display"
-    },
+    //{
+        //"type": "display",
+        //"key": "   Display"
+    //},
     {
         "type": "custom",
         "format": "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
