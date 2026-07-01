@@ -377,6 +377,7 @@ blur {
 window-rule {
     match app-id="kitty|emacs"
     background-effect {
+        xray false
         blur true
     }
 }
