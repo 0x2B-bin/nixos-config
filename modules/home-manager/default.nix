@@ -1,13 +1,13 @@
 { self, ... }:
 {
   flake.nixosModules = {
-    hm-server-config = { config, ...}: {
+    hm-server-config = { config, ... }: {
       home-manager = {
         useGlobalPkgs = true;
         useUserPackages = true;
 
         users.${config.settings.username} = {
-           home = {
+          home = {
             username = config.settings.username;
             homeDirectory = "/home/${config.settings.username}";
             stateVersion = "25.05";

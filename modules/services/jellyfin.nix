@@ -1,12 +1,15 @@
 {
-  flake.nixosModules.jellyfin = {config, ...}: {
+  flake.nixosModules.jellyfin = { config, ... }: {
     services.jellyfin = {
       enable = true;
       openFirewall = true;
     };
 
     users.users.jellyfin = {
-      extraGroups = [ "video" "render" ];
+      extraGroups = [
+        "video"
+        "render"
+      ];
     };
 
     fileSystems."/var/lib/jellyfin/media/anime" = {

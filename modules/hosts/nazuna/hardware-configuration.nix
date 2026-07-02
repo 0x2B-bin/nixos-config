@@ -3,29 +3,32 @@
 # to /etc/nixos/configuration.nix instead.
 {
   flake.nixosModules.nazuna-hardware =
-  {
-    config,
-    lib,
-    modulesPath,
-    ...
-  }:
-  {
-    imports =
-      [ (modulesPath + "/installer/scan/not-detected.nix")
+    {
+      config,
+      lib,
+      modulesPath,
+      ...
+    }:
+    {
+      imports = [
+        (modulesPath + "/installer/scan/not-detected.nix")
       ];
 
-    boot.initrd.availableKernelModules = [ "xhci_pci" "usbhid" ];
-    boot.initrd.kernelModules = [ ];
-    boot.kernelModules = [ ];
-    boot.extraModulePackages = [ ];
+      boot.initrd.availableKernelModules = [
+        "xhci_pci"
+        "usbhid"
+      ];
+      boot.initrd.kernelModules = [ ];
+      boot.kernelModules = [ ];
+      boot.extraModulePackages = [ ];
 
-    fileSystems."/" =
-      { device = "/dev/disk/by-uuid/44444444-4444-4444-8888-888888888888";
+      fileSystems."/" = {
+        device = "/dev/disk/by-uuid/44444444-4444-4444-8888-888888888888";
         fsType = "ext4";
       };
 
-    swapDevices = [ ];
+      swapDevices = [ ];
 
-    nixpkgs.hostPlatform = lib.mkDefault "aarch64-linux";
-  };
+      nixpkgs.hostPlatform = lib.mkDefault "aarch64-linux";
+    };
 }

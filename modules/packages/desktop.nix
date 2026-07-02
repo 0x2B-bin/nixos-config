@@ -1,5 +1,6 @@
 {
-  flake.nixosModules.desktop-packages = { pkgs, inputs, ... }:
+  flake.nixosModules.desktop-packages =
+    { pkgs, inputs, ... }:
     {
       environment.systemPackages = with pkgs; [
         vesktop

@@ -1,8 +1,7 @@
 {
-  flake.homeModules.btop =
-  {
+  flake.homeModules.btop = {
     config = {
-      programs.btop ={
+      programs.btop = {
         enable = true;
         settings = {
           color_theme = "TTY";

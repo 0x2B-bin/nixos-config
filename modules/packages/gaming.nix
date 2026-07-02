@@ -1,5 +1,6 @@
 {
-  flake.nixosModules.gaming-packages = { pkgs, ... }:
+  flake.nixosModules.gaming-packages =
+    { pkgs, ... }:
     {
       environment.systemPackages = with pkgs; [
         steam

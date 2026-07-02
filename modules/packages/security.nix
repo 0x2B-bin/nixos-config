@@ -1,5 +1,6 @@
 {
-  flake.nixosModules.security-packages = { pkgs, inputs, ... }:
+  flake.nixosModules.security-packages =
+    { pkgs, inputs, ... }:
     {
       environment.systemPackages = with pkgs; [
         hashcat

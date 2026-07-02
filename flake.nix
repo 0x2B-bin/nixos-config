@@ -29,6 +29,11 @@
       inputs.flake-parts.follows = "flake-parts";
     };
 
+    mikuPlymouth = {
+      url = "github:Thang1191/MikuPlymouth";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     pwngdb = {
       url = "github:pwndbg/pwndbg";
       inputs.nixpkgs.follows = "nixpkgs";

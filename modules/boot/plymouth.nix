@@ -1,10 +1,12 @@
 {
   flake.nixosModules.plymouth =
-    { pkgs, ... }:
+    { pkgs, inputs, ... }:
     {
+      imports = [ inputs.mikuPlymouth.nixosModules.default ];
+
       boot.plymouth = {
         enable = true;
-        theme = "nier";
+        theme = "MikuPlymouth";
 
         themePackages = [
           (pkgs.stdenv.mkDerivation {
@@ -22,6 +24,7 @@
               sed -i "s|@out@|$out|" $out/share/plymouth/themes/nier/nier.plymouth
             '';
           })
+          pkgs.mikuPlymouth
         ];
       };
     };

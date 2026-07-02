@@ -1,6 +1,11 @@
 {
   flake.nixosModules.sddm =
-    { pkgs, config, inputs, ... }:
+    {
+      pkgs,
+      config,
+      inputs,
+      ...
+    }:
     {
       imports = [ inputs.qylock.nixosModules.qylock ];
 
