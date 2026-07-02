@@ -24,7 +24,7 @@
       ];
       boot.initrd.kernelModules = [
         "nvidia"
-        "nvidia_modset"
+        "nvidia_modeset"
         "nvidia_uvm"
         "nvidia_drm"
       ];
