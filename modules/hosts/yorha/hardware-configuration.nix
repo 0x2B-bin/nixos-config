@@ -22,7 +22,12 @@
         "usbhid"
         "sd_mod"
       ];
-      boot.initrd.kernelModules = [ ];
+      boot.initrd.kernelModules = [
+        "nvidia"
+        "nvidia_modset"
+        "nvidia_uvm"
+        "nvidia_drm"
+      ];
       boot.kernelModules = [
         "kvm-amd"
         "ntsync"
