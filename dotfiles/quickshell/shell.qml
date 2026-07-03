@@ -7,7 +7,7 @@ import "Launcher"
 
 ShellRoot {
     VolumeWidget {}
-    // Launcher {}
+    Launcher {}
     Variants {
         model: Quickshell.screens
 
