@@ -21,7 +21,7 @@ layout {
 }
 
 cursor {
-    xcursor-theme "kurumi_blz"
+    xcursor-theme "miyabi_blz"
     xcursor-size 16
 
     //hide-when-typing
