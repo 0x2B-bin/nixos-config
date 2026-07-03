@@ -448,7 +448,8 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: Kitty" { spawn "kitty"; }
-    Mod+D hotkey-overlay-title="Run an Application: Wofi" { spawn-sh "wofi --show drun"; }
+    Mod+P hotkey-overlay-title="Run an Application: Wofi" { spawn-sh "wofi --show drun"; }
+    Mod+D hotkey-overlay-title="Run an Application: App Launcher" { spawn-sh "qs ipc call app-launcher toggle"; }
     Mod+E hotkey-overlay-title="Open Emacs" { spawn "emacs"; }
     Mod+M hotkey-overlay-title="Mirrors the screen" { spawn-sh "wl-mirror eDP-1"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: qylock" { spawn "qylock-lock"; }

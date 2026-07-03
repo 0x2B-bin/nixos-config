@@ -12,11 +12,11 @@ PanelWindow {
     implicitWidth: 700
     implicitHeight: 500
     property bool isOpen: false
-    visible: false
+    visible: isOpen || slideAnimation.running
     exclusionMode: ExclusionMode.Ignore
 
     WlrLayershell.layer: WlrLayer.Top
-    WlrLayershell.keyboardFocus: (isOpen || slideAnimation.running) ? WlrKeyboardFocus.Exclusive : WlrKeyboardFocus.None
+    WlrLayershell.keyboardFocus: isOpen ? WlrKeyboardFocus.Exclusive : WlrKeyboardFocus.None
 
     color: "transparent"
 
@@ -35,10 +35,8 @@ PanelWindow {
             if (launcher.isOpen) {
                 searchInput.text = "";
                 searchInput.forceActiveFocus();
-                launcher.visible = true
             } else {
                 appList.currentIndex = 0
-                //launcher.visible = false
             }
         }
     }
@@ -62,7 +60,6 @@ PanelWindow {
             appList.currentItem.modelData.execute()
             appList.currentIndex = 0
             launcher.isOpen = false
-            launcher.visible = false
         }
     }
 
@@ -70,33 +67,16 @@ PanelWindow {
         id: contentRoot
         width: launcher.width
         height: launcher.height
+        y: launcher.isOpen ? 0 : launcher.height
         color: "#191717"
         topRightRadius: 7
         topLeftRadius: 7
 
-        states: [
-            State {
-                name: "visible"; when: launcher.isOpen
-                PropertyChanges { target: contentRoot; y: 0  }
-            },
-            State {
-                name: "hidden"; when: !launcher.isOpen
-                PropertyChanges { target: contentRoot; y: launcher.height  }
-            }
-        ]
-
-        transitions: Transition {
+        Behavior on y {
             NumberAnimation {
                 id: slideAnimation
-                property: "y"
                 duration: 250
                 easing.type: Easing.OutCubic
-
-                onFinished: {
-                    if (!launcher.isOpen) {
-                        launcher.visible = false
-                    }
-                }
             }
         }
 
