@@ -4,6 +4,7 @@
     imports = with self.nixosModules; [
       desktop-profile
       distributedBuilds
+      binary-cache-server
     ];
 
     settings = {

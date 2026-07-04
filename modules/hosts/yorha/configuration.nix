@@ -8,6 +8,7 @@
     imports = with self.nixosModules; [
       desktop-profile
       remote-builder
+      binary-cache-server
     ];
 
     services.remoteBuilder = {

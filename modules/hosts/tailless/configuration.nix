@@ -5,6 +5,7 @@
       desktop-profile
       distributedBuilds
       jellyfin
+      binary-cache-client
     ];
 
     settings = {
