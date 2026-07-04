@@ -10,11 +10,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780112584,
-        "narHash": "sha256-IoqFTTXSkeKO5J0L5MecgbtVOqoxU7F0cHn4Czr1eOc=",
+        "lastModified": 1782642942,
+        "narHash": "sha256-gIAOT5A3MQsh0tnQKfyLD6hY25Lo8awdAf1RFFmXgJ0=",
         "owner": "0x2B-bin",
         "repo": "AniCursors",
-        "rev": "b62357fde7966ff20a16c2ee2691f19a2208284f",
+        "rev": "80db446bf586a56318b34dadf1835fb460a3b976",
         "type": "github"
       },
       "original": {
@@ -181,11 +181,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1780749050,
-        "narHash": "sha256-3av0pIjlOWQ6rDbNOmpUSvbNnJkGORQKKjb4LtCZsIY=",
+        "lastModified": 1782959384,
+        "narHash": "sha256-xnJJk+ct+D2+wdRxj1wk36w5zV9RVESwRqcklPdt3fM=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "a799d3e3886da994fa307f817a6bc705ae538eeb",
+        "rev": "65179426c83bb3f6bc14898b42ea1c6f01d374b0",
         "type": "github"
       },
       "original": {
