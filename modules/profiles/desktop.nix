@@ -17,5 +17,6 @@
     ];
 
     programs.dconf.enable = true;
+    hardware.opentabletdriver.enable = true;
   };
 }
