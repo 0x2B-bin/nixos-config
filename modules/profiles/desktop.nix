@@ -14,6 +14,7 @@
       fonts
       bluetooth
       xdg
+      printing
     ];
 
     programs.dconf.enable = true;
