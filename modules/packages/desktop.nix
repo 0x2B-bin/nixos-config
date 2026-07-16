@@ -35,6 +35,7 @@
         wl-clipboard
         kitty
         mako
+        wpgtk
         wofi
         brightnessctl
         quickshell
