@@ -12,6 +12,10 @@
             User git
             IdentityFile ~/.ssh/keys/gitlab_rsa
 
+          Host codeberg.org
+            User git
+            IdentityFile ~/.ssh/keys/codeberg
+
           Host acheron
             User ${osConfig.settings.username}
             IdentityFile ~/.ssh/keys/acheron_id_rsa
