@@ -8,6 +8,7 @@
         audacity
         nwg-look
         jellyfin-desktop
+        element-desktop
         networkmanagerapplet
         pavucontrol
         ffmpeg
