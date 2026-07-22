@@ -17,6 +17,7 @@
         cups-filters
         cups-browsed
         gutenprint
+        ghostscript
       ];
     };
   };
