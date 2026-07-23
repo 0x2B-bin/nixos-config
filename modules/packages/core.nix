@@ -17,6 +17,7 @@
         neovim
         fastfetch
         eza
+        tokei
         bat
         file
         btop
