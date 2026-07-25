@@ -30,11 +30,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781487091,
-        "narHash": "sha256-xHjU6cajCxecXbB2BYDAtnxj6ntScYJjAmC9Pn7rmUU=",
+        "lastModified": 1784964601,
+        "narHash": "sha256-i4ymD2Lda2Ugt3/0tEtXUNqTL+IFL+ShxsvC6UaLTpg=",
         "ref": "refs/heads/main",
-        "rev": "3619221335f389f1869bebba3c56121142e49d33",
-        "revCount": 5,
+        "rev": "cd54dbbfb008e82db54d005b26d5a5d515872701",
+        "revCount": 6,
         "type": "git",
         "url": "ssh://git@gitlab.com/animeuc/nixos-modules.git"
       },

@@ -13,6 +13,7 @@
         server-profile
         inputs.auc-flake.nixosModules.gitlab-runner
         inputs.auc-flake.nixosModules.git
+        inputs.auc-flake.nixosModules.packages
       ];
 
       environment.sessionVariables = {
