@@ -21,6 +21,7 @@
         bat
         file
         btop
+        just
         unzip
         ripgrep
         tailscale
