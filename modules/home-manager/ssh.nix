@@ -32,6 +32,9 @@
 
           Host nazuna
             User ${osConfig.settings.username}
+        
+          Host eve
+            User ${osConfig.settings.username}
         '';
       };
     };
