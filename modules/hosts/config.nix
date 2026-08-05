@@ -1,6 +1,6 @@
 {
   flake.nixosModules.settings =
-    { config, lib, ... }:
+    { config, pkgs, lib, inputs, ... }:
     let
       cfg = config.settings;
     in
@@ -32,12 +32,8 @@
         };
 
         grub-theme = lib.mkOption {
-          type = lib.types.enum [
-            "futaba"
-            "yorha"
-            "lain"
-          ];
-          default = "yorha";
+          type = lib.types.package;
+          default = inputs.grub-themes.packages.${pkgs.stdenv.hostPlatform.system}.yorha;
         };
 
         shell = lib.mkOption {

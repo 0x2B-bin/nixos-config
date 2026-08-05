@@ -51,6 +51,12 @@
       inputs.flake-parts.follows = "flake-parts";
     };
 
+    grub-themes = {
+      url = "git+https://codeberg.org/0x2B/grub-themes-nix.git";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
+    };
+
     qylock = {
       url = "github:0x2B-bin/qylock-flake";
       inputs.nixpkgs.follows = "nixpkgs";

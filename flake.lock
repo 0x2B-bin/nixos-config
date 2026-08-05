@@ -61,6 +61,29 @@
         "type": "github"
       }
     },
+    "grub-themes": {
+      "inputs": {
+        "flake-parts": [
+          "flake-parts"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1785916699,
+        "narHash": "sha256-mHs9RUbv7G+3UBhfnOv42K86fbYMBFr7l7M9EhM4SC0=",
+        "ref": "refs/heads/main",
+        "rev": "d218eaf4be6848317d90e3d072375eb3e6281f5a",
+        "revCount": 1,
+        "type": "git",
+        "url": "https://codeberg.org/0x2B/grub-themes-nix.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://codeberg.org/0x2B/grub-themes-nix.git"
+      }
+    },
     "hatsune-miku-cursors": {
       "inputs": {
         "flake-parts": [
@@ -311,6 +334,7 @@
         "anicursors": "anicursors",
         "auc-flake": "auc-flake",
         "flake-parts": "flake-parts",
+        "grub-themes": "grub-themes",
         "hatsune-miku-cursors": "hatsune-miku-cursors",
         "henshin": "henshin",
         "home-manager": "home-manager",

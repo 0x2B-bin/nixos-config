@@ -4,7 +4,7 @@
 
 { self, ... }:
 {
-  flake.nixosModules.yorha-configuration = { config, pkgs, ... }: {
+  flake.nixosModules.yorha-configuration = { pkgs, config, inputs, ... }: {
     imports = with self.nixosModules; [
       desktop-profile
       remote-builder
@@ -19,6 +19,7 @@
     settings = {
       qylock-theme = "nier-automata";
       qylock-sddm-font = ../../../fonts/FOT-Rodin-Pro-DB.otf;
+      grub-theme = inputs.grub-themes.packages.${pkgs.stdenv.hostPlatform.system}.lobo;
       shell = "nushell";
     };
 
