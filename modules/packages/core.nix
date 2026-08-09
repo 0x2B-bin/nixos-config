@@ -25,6 +25,7 @@
         unzip
         ripgrep
         tailscale
+        rtorrent
         samba
         #self.packages."${pkgs.stdenv.hostPlatform.system}".fhs
         gcc
