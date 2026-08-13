@@ -6,6 +6,7 @@
     import-tree.url = "github:vic/import-tree";
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    noctalia.url = "github:noctalia-dev/noctalia";
 
     home-manager = {
       url = "github:nix-community/home-manager";

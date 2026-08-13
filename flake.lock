@@ -233,6 +233,37 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1786106723,
+        "narHash": "sha256-CgKDSHL6rqAAQkkvg1xaZDQXb77+4XW73iGcUMJ+2w0=",
+        "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1049422.f13ff45afd1b/nixexprs.tar.zst"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst"
+      }
+    },
+    "noctalia": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1786566000,
+        "narHash": "sha256-JOcHQWCcYsPq0bOP42UdV4f42nvlip7sh3vuxvSpEUM=",
+        "owner": "noctalia-dev",
+        "repo": "noctalia",
+        "rev": "cd06851db4f40ab61d219a903518a1ca03fc3db3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "noctalia",
+        "type": "github"
+      }
+    },
     "pwngdb": {
       "inputs": {
         "nixpkgs": [
@@ -342,6 +373,7 @@
         "mikuPlymouth": "mikuPlymouth",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs",
+        "noctalia": "noctalia",
         "pwngdb": "pwngdb",
         "qylock": "qylock",
         "snapsr": "snapsr",
