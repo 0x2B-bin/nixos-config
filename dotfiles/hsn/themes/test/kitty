@@ -1,0 +1,71 @@
+# --- Main Colors ---
+background            #1a1112
+foreground            #f0dedf
+cursor                #f0dedf
+cursor_text_color     #1a1112
+
+selection_background  #5c3f42
+selection_foreground  #ffd9dc
+
+url_color             #e9bf8f
+
+# --- ANSI Colors ---
+color0                #1a1112
+color1                #ffb4ab
+color2                #e9bf8f
+color3                #e5bdc0
+color4                #ffb2ba
+color5                #e9bf8f
+color6                #e5bdc0
+color7                #f0dedf
+
+color8                #524344
+color9                #93000a
+color10               #5d411b
+color11               #5c3f42
+color12               #72333c
+color13               #5c3f42
+color14               #5d411b
+color15               #d7c1c3
+
+# --- Starship Prompt Bubbles ---
+color255              #72333c
+color254              #ffb2ba
+color253              #5c3f42
+color252              #e5bdc0
+color251              #5d411b
+color250              #e9bf8f
+color249              #93000a
+color248              #ffb4ab
+
+color232              #ffd9dc
+color233              #561d27
+color234              #ffd9dc
+color235              #43292c
+color236              #ffddb7
+color237              #442b07
+color238              #ffdad6
+color239              #690005
+color240              #ffd9dc
+
+# Matched with unthemed light/dark
+color243              #ffb2ba
+color244              #ffb4ab
+color245              #524344
+
+# --- UI Elements ---
+active_tab_foreground   #561d27
+active_tab_background   #ffb2ba
+inactive_tab_foreground #ffd9dc
+inactive_tab_background #72333c
+
+active_border_color     #ffb2ba
+inactive_border_color   #9f8c8d
+
+# --- Marks ---
+mark1_foreground        #3b0713
+mark1_background        #ffd9dc
+mark2_foreground        #2c1518
+mark2_background        #ffd9dc
+mark3_foreground        #2a1700
+mark3_background        #ffddb7

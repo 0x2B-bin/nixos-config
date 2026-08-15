@@ -28,6 +28,8 @@
       enable32Bit = true;
     };
 
+    hardware.flipperzero.enable = true;
+
     hardware.uinput.enable = true;
     users.users.${config.settings.username} = {
       extraGroups = [ "uinput" ];

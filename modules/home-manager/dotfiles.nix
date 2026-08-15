@@ -13,6 +13,7 @@
           "fastfetch/config.jsonc".source = "${dotfiles}/fastfetch/config.jsonc";
           nvim.source = "${dotfiles}/nvim";
           quickshell.source = "${dotfiles}/quickshell";
+          noctalia.source = "${dotfiles}/noctalia";
         };
 
         home.activation.createNiriConfigs = config.lib.dag.entryAfter [ "writeBoundary" ] ''

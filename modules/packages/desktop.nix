@@ -2,6 +2,11 @@
   flake.nixosModules.desktop-packages =
     { pkgs, inputs, ... }:
     {
+        
+      imports = [
+        inputs.noctalia.nixosModules.default
+      ];
+
       environment.systemPackages = with pkgs; [
         vesktop
         aseprite
@@ -9,6 +14,7 @@
         nwg-look
         jellyfin-desktop
         element-desktop
+        qFlipper
         networkmanagerapplet
         pavucontrol
         ffmpeg
@@ -18,6 +24,8 @@
         wireshark
         postman
         obs-studio
+        matugen
+        wallust
         qbittorrent
         losslesscut-bin
         awww
@@ -42,7 +50,6 @@
         quickshell
         inputs.henshin.packages."${pkgs.stdenv.hostPlatform.system}".default
         inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
-        inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
         inputs.hatsune-miku-cursors.packages."${pkgs.stdenv.hostPlatform.system}".default
         inputs.anicursors.packages."${pkgs.stdenv.hostPlatform.system}".default
       ];
@@ -52,6 +59,10 @@
         niri.enable = true;
         xwayland.enable = true;
         wireshark.enable = true;
+        noctalia = {
+            enable = true;
+            recommendedServices.enable = true;
+        };
       };
     };
 }
