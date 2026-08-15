@@ -1,0 +1,8 @@
+backend = "wal"
+palette = "harddark"
+saturation = 10
+
+[templates]
+kitty = { src='kitty.conf', dst='~/.config/kitty/theme.conf'}
+#niri = { src='niri.conf', dst='~/.config/niri/style.kdl'}
+

@@ -1,0 +1,5 @@
+[config]
+
+[templates.niri]
+input_path = '~/.config/matugen/templates/niri.conf'
+output_path = '~/.config/niri/style.kdl'

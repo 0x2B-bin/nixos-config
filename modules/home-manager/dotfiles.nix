@@ -13,6 +13,8 @@
           "fastfetch/config.jsonc".source = "${dotfiles}/fastfetch/config.jsonc";
           nvim.source = "${dotfiles}/nvim";
           quickshell.source = "${dotfiles}/quickshell";
+          wallust.source = "${dotfiles}/wallust";
+          matugen.source = "${dotfiles}/matugen";
           noctalia.source = "${dotfiles}/noctalia";
         };
 
