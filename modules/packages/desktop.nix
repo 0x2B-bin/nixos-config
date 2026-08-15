@@ -9,7 +9,7 @@
 
       environment.systemPackages = with pkgs; [
         vesktop
-        aseprite
+        #aseprite; add back later, build error
         audacity
         nwg-look
         jellyfin-desktop

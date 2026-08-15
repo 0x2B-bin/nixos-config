@@ -6,7 +6,7 @@
         steam
         osu-lazer-bin
         protonplus
-        pcsx2
+        #pcsx2; add back in later, build error
         gamescope
         lunar-client
       ];
