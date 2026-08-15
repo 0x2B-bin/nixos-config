@@ -1,0 +1,149 @@
+config_version = 12
+
+[bar.default]
+capsule = true
+end = [
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "group:g1",
+    "control-center",
+    "session"
+]
+font_family = "JetBrains Mono"
+icon_color = "primary"
+start = [ "launcher", "wallpaper", "workspaces", "media" ]
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "cpu", "ram" ]
+    opacity = 1.0
+    padding = 6.0
+    widget_spacing = 9
+
+[control_center]
+hidden_tabs = [ "weather", "screen-time" ]
+
+    [control_center.calendar]
+    show_events_card = false
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+icon_size = 32
+
+[hooks]
+wallpaper_changed = "/home/nate/.config/noctalia/scripts/wallpaper.sh"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@DP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 961.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 961.0
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+
+[osd]
+position = "bottom_center"
+
+[shell]
+avatar_path = "/home/nate/.config/noctalia/avatars/2b.jpg"
+font_family = "JetBrains Mono"
+
+    [shell.launcher]
+    compact = true
+
+    [shell.panel]
+    launcher_placement = "attached"
+
+    [shell.screen_corners]
+    enabled = true
+    size = 40
+
+    [shell.screenshot]
+    save_to_file = false
+
+[theme]
+builtin = "Ayu"
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4" ]
+
+[widget.audio_visualizer]
+color_2 = "on_primary"
+
+[widget.bluetooth]
+enabled = false
+
+[widget.clipboard]
+enabled = false
+
+[widget.tray]
+enabled = false
+
+[widget.workspaces]
+focused_output_only = true
+pill_scale = 0.75
+show_labels = false
