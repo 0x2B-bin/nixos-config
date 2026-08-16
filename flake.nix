@@ -30,6 +30,11 @@
       inputs.flake-parts.follows = "flake-parts";
     };
 
+    ufbt = {
+      url = "git+https://codeberg.org/0x2B/ufbt-nix.git";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     mikuPlymouth = {
       url = "github:Thang1191/MikuPlymouth";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -377,6 +377,7 @@
         "pwngdb": "pwngdb",
         "qylock": "qylock",
         "snapsr": "snapsr",
+        "ufbt": "ufbt",
         "zen-browser": "zen-browser"
       }
     },
@@ -413,6 +414,26 @@
         "owner": "nix-systems",
         "repo": "default",
         "type": "github"
+      }
+    },
+    "ufbt": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1786807586,
+        "narHash": "sha256-Gem3OUvQpd049cAi58wvVj+UIFz2YPy63khzRMOpKoQ=",
+        "ref": "refs/heads/main",
+        "rev": "23aec2534f00aa7240aa26e1d1d6ec201f172cde",
+        "revCount": 1,
+        "type": "git",
+        "url": "https://codeberg.org/0x2B/ufbt-nix.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://codeberg.org/0x2B/ufbt-nix.git"
       }
     },
     "utils": {

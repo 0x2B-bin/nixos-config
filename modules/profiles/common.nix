@@ -6,6 +6,7 @@
       openssh
       resolved
       tailscale
+      flipper
       users
       network-manager
       nix-ld
