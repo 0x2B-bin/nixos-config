@@ -2,7 +2,7 @@
   flake.nixosModules.desktop-packages =
     { pkgs, inputs, ... }:
     {
-        
+
       imports = [
         inputs.noctalia.nixosModules.default
       ];
@@ -60,8 +60,8 @@
         xwayland.enable = true;
         wireshark.enable = true;
         noctalia = {
-            enable = true;
-            recommendedServices.enable = true;
+          enable = true;
+          recommendedServices.enable = true;
         };
       };
     };

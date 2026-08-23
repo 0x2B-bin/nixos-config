@@ -1,6 +1,12 @@
 {
   flake.nixosModules.settings =
-    { config, pkgs, lib, inputs, ... }:
+    {
+      config,
+      pkgs,
+      lib,
+      inputs,
+      ...
+    }:
     let
       cfg = config.settings;
     in
