@@ -43,7 +43,7 @@
         wl-mirror
         wl-clipboard
         kitty
-        mako
+        #mako
         wpgtk
         wofi
         brightnessctl
