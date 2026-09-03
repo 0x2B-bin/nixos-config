@@ -12,7 +12,6 @@
         aseprite
         audacity
         nwg-look
-        jellyfin-desktop
         element-desktop
         qFlipper
         networkmanagerapplet
