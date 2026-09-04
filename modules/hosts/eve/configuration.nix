@@ -11,6 +11,7 @@
     {
       imports = with self.nixosModules; [
         server-profile
+        immich
       ];
 
       settings = {
