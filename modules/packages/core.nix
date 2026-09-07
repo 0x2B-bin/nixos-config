@@ -17,6 +17,7 @@
         neovim
         fastfetch
         eza
+        proton-vpn-cli
         tokei
         bat
         file
