@@ -35,14 +35,31 @@
           withHaishoku = true;
         })
         niri
-        xwayland-satellite
+        (xwayland-satellite.overrideAttrs (finalAttrs: previousAttrs: {
+          version = "0.8.1";
+          src = pkgs.fetchFromGitHub {
+            owner = "Supreeeme";
+            repo = "xwayland-satellite";
+            tag = "v${finalAttrs.version}";
+            hash = "sha256-BUE41HjLIGPjq3U8VXPjf8asH8GaMI7FYdgrIHKFMXA=";
+          };
+          cargoHash = "sha256-16L6gsvze+m7XCJlOA1lsPNELE3D364ef2FTdkh0rVY=";
+          cargoDeps = pkgs.rustPlatform.fetchCargoVendor {
+              src = pkgs.fetchFromGitHub {
+              owner = "Supreeeme";
+              repo = "xwayland-satellite";
+              tag = "v${finalAttrs.version}";
+              hash = "sha256-BUE41HjLIGPjq3U8VXPjf8asH8GaMI7FYdgrIHKFMXA=";
+            };  
+            hash = "sha256-16L6gsvze+m7XCJlOA1lsPNELE3D364ef2FTdkh0rVY=";
+          };
+        }))
         xdg-desktop-portal-gnome
         xdg-desktop-portal-gtk
         adwaita-icon-theme
         wl-mirror
         wl-clipboard
         kitty
-        #mako
         wpgtk
         wofi
         brightnessctl
