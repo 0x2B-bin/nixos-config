@@ -1,6 +1,6 @@
 { self, ... }:
 {
-  flake.nixosModules.oracle-configuration = {
+  flake.nixosModules.oracle-configuration = { inputs, pkgs, ... }: {
     imports = with self.nixosModules; [
       desktop-profile
       distributedBuilds
@@ -10,6 +10,7 @@
     settings = {
       qylock-theme = "enfield";
       shell = "nushell";
+      grub-theme = inputs.grub-themes.packages.${pkgs.stdenv.hostPlatform.system}.lobo;
     };
 
     networking.hostName = "oracle";
