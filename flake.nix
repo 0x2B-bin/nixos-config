@@ -73,6 +73,11 @@
       url = "git+ssh://git@gitlab.com/animeuc/nixos-modules.git";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    anisync = {
+        url = "git+https://codeberg.org/0x2B/anisync.git";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

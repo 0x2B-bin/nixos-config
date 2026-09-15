@@ -23,6 +23,26 @@
         "type": "github"
       }
     },
+    "anisync": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1789488203,
+        "narHash": "sha256-6ZutNQasJ4wE1pkcwZeUUk4+G41J/08oyb+vZbrecg0=",
+        "ref": "refs/heads/main",
+        "rev": "c8dcede69cb31f217cd7f8173ac532b950f22d7d",
+        "revCount": 27,
+        "type": "git",
+        "url": "https://codeberg.org/0x2B/anisync.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://codeberg.org/0x2B/anisync.git"
+      }
+    },
     "auc-flake": {
       "inputs": {
         "nixpkgs": [
@@ -363,6 +383,7 @@
     "root": {
       "inputs": {
         "anicursors": "anicursors",
+        "anisync": "anisync",
         "auc-flake": "auc-flake",
         "flake-parts": "flake-parts",
         "grub-themes": "grub-themes",

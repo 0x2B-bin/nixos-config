@@ -5,6 +5,7 @@
       desktop-profile
       distributedBuilds
       binary-cache-client
+      inputs.anisync.nixosModules.default
     ];
 
     settings = {
@@ -12,6 +13,8 @@
       shell = "nushell";
       grub-theme = inputs.grub-themes.packages.${pkgs.stdenv.hostPlatform.system}.lobo;
     };
+
+    services.anisync.enable = true;
 
     networking.hostName = "oracle";
 
