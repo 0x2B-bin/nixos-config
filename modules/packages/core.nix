@@ -41,7 +41,6 @@
         nixd
         tmux
         docker
-        inputs.anisync.packages."${pkgs.stdenv.hostPlatform.system}".anisync-cli
       ];
 
       programs.zsh.enable = true;

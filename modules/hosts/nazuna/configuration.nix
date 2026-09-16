@@ -14,11 +14,14 @@
         inputs.auc-flake.nixosModules.gitlab-runner
         inputs.auc-flake.nixosModules.git
         inputs.auc-flake.nixosModules.packages
+        inputs.anisync.nixosModules.default
       ];
 
       environment.sessionVariables = {
         KOUBOTTO_DIR = "/srv/auc-deployment";
       };
+
+      services.anisync.enable = true;
 
       services.auc.gitlab-runner.enable = true;
       programs.auc.git.enable = true;
