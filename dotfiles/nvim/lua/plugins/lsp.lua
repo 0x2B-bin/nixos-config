@@ -44,7 +44,7 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
-            local servers = { "lua_ls", "rust_analyzer", "nixd", "gopls", "pylsp", "ts_ls", "clangd" }
+            local servers = { "lua_ls", "rust_analyzer", "nixd", "gopls", "pylsp", "ts_ls", "clangd", "dartls" }
             vim.lsp.enable(servers)
 
             vim.diagnostic.config({ 
