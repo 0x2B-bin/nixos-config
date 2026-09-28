@@ -14,8 +14,6 @@
       grub-theme = inputs.grub-themes.packages.${pkgs.stdenv.hostPlatform.system}.lobo;
     };
 
-    services.anisync.enable = true;
-
     networking.hostName = "oracle";
 
     system.stateVersion = "25.05";
