@@ -6,7 +6,7 @@
       common-profile
       desktop-packages
       gaming-packages
-      sddm
+      noctalia-greeter 
       plymouth
       pipewire
       security-packages
