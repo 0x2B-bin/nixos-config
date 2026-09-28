@@ -12,7 +12,7 @@
         ffuf
         aircrack-ng
         wirelesstools
-        inputs.pwngdb.packages."${pkgs.stdenv.hostPlatform.system}".default
+        #inputs.pwngdb.packages."${pkgs.stdenv.hostPlatform.system}".default
       ];
     };
 }

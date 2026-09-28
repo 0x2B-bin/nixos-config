@@ -9,7 +9,7 @@
           keyboard.layout = "us";
         };
 
-        #passwordlessUsers = [ config.settings.username ];
+        passwordlessSyncUsers = [ config.settings.username ];
       };
     };
   };
