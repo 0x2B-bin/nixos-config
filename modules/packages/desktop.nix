@@ -68,6 +68,7 @@
       programs = {
         firefox.enable = true;
         niri.enable = true;
+        umbriel.enable = true;
         xwayland.enable = true;
         wireshark.enable = true;
         noctalia = {
