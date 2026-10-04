@@ -43,6 +43,10 @@
         docker
       ];
 
+      environment.shells = with pkgs; [
+        nushell
+      ];
+
       programs.zsh.enable = true;
       virtualisation.docker.enable = true;
     };

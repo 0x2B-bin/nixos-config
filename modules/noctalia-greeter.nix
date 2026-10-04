@@ -1,5 +1,9 @@
 {
-  flake.nixosModules.noctalia-greeter = { config, ... }: {
+  flake.nixosModules.noctalia-greeter = { config, inputs, ... }: {
+    imports = [
+      inputs.noctalia-greeter.nixosModules.default
+    ];
+
     services.displayManager = {
       noctalia-greeter = {
         enable = true;
@@ -13,8 +17,10 @@
           user.default = config.settings.username;
         };
 
-        passwordlessSyncUsers = [ config.settings.username ];
+        passwordless-sync-users = [ config.settings.username ];
       };
     };
+
+    security.polkit.enable = true;
   };
 }
