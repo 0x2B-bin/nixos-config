@@ -15,6 +15,7 @@
       bluetooth
       xdg
       printing
+      android
     ];
 
     programs.dconf.enable = true;
