@@ -28,6 +28,8 @@ start = [ "launcher", "wallpaper", "workspaces", "media" ]
     padding = 6.0
     widget_spacing = 9
 
+[calendar]
+
 [control_center]
 hidden_tabs = [ "weather", "screen-time" ]
 
@@ -52,9 +54,15 @@ icon_size = 32
 wallpaper_changed = "/home/nate/.config/noctalia/scripts/wallpaper.sh"
 
 [lockscreen_widgets]
-enabled = false
+enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@DP-1" ]
+widget_order = [
+    "lockscreen-login-box@WL-1",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-login-box@HDMI-A-1",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-widget-0000000000000001"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -64,9 +72,11 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@HDMI-A-1", 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
     box_height = 196.0
     box_width = 720.0
-    cx = 960.0
-    cy = 961.0
+    cx = 944.0
+    cy = 954.0
     output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -92,10 +102,39 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@HDMI-A-1", 
     cx = 960.0
     cy = 961.0
     output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 471.0
+    cy = 842.0
+    output = "WL-1"
+    placement_height = 1024.0
+    placement_width = 942.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
@@ -117,6 +156,8 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@HDMI-A-1", 
     cx = 960.0
     cy = 898.0
     output = "eDP-1"
+    placement_height = 0.0
+    placement_width = 0.0
     rotation = 0.0
     type = "login_box"
 
@@ -136,12 +177,27 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@HDMI-A-1", 
         show_unlock_hint = true
         show_weather = true
 
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 945.0
+    cy = 738.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
 [osd]
 position = "bottom_center"
 
 [shell]
 avatar_path = "/home/nate/.config/noctalia/avatars/2b.jpg"
 font_family = "JetBrains Mono"
+polkit_agent = true
+
+    [shell.greeter_sync]
+    auto_sync = true
 
     [shell.launcher]
     compact = true
@@ -154,6 +210,8 @@ font_family = "JetBrains Mono"
     size = 40
 
     [shell.screenshot]
+    confirm_region = true
+    remember_last_region = true
     save_to_file = false
 
 [theme]
@@ -164,17 +222,24 @@ source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "gtk4" ]
+    builtin_ids = [ "gtk3", "gtk4", "umbriel" ]
 
 [wallpaper]
 directory = "/home/nate/Wallpapers"
+enabled = true
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/nate/Wallpapers/made_in_abyss_2.png"
+    path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
 
     [wallpaper.last]
-    path = "/home/nate/Wallpapers/made_in_abyss_2.png"
+    path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
 
     [wallpaper.monitors.eDP-1]
     path = "/home/nate/Wallpapers/made_in_abyss_2.png"

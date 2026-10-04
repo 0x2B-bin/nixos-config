@@ -11,6 +11,7 @@
         settings = {
           appearance = {
             scheme_selector_position = "hidden";
+            hide_logo = true;
           };
           cursor.size = 24;
           keyboard.layout = "us";
