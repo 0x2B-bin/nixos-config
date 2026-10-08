@@ -19,6 +19,7 @@
         eza
         proton-vpn-cli
         tokei
+        yazi
         bat
         file
         btop
