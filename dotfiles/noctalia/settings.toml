@@ -156,8 +156,8 @@ widget_order = [
     cx = 960.0
     cy = 898.0
     output = "eDP-1"
-    placement_height = 0.0
-    placement_width = 0.0
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -200,7 +200,10 @@ polkit_agent = true
     auto_sync = true
 
     [shell.launcher]
+    categories = false
     compact = true
+    layout = "simple"
+    search_position = "top"
 
     [shell.panel]
     launcher_placement = "attached"
@@ -230,10 +233,10 @@ enabled = true
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
+    path = "/home/nate/Wallpapers/made_in_abyss_4.png"
 
     [wallpaper.last]
-    path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
+    path = "/home/nate/Wallpapers/made_in_abyss_4.png"
 
     [wallpaper.monitors.DP-1]
     path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
@@ -242,7 +245,7 @@ transition_on_startup = true
     path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/nate/Wallpapers/made_in_abyss_2.png"
+    path = "/home/nate/Wallpapers/made_in_abyss_4.png"
 
 [widget.audio_visualizer]
 color_2 = "on_primary"
