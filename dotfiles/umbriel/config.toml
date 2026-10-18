@@ -214,6 +214,7 @@ theme = "Adwaita"
 
 
 "Print" = "spawn:noctalia msg screenshot-region"
+"Mod+Shift+S" = "spawn:noctalia msg screenshot-region"
 
 # ==============================================================================
 # Layout
