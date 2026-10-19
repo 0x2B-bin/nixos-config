@@ -13,6 +13,31 @@
                 set -g @tokyo-night-tmux_transparent 1
               '';
             }
+            {
+              plugin = sensible;
+              extraConfig = ''
+                set -g @plugin "tmux-plugins/tmux-sensible"
+              '';
+            }
+            {
+              plugin = vim-tmux-navigator;
+              extraConfig = ''
+                set -g @plugin "christoomey/vim-tmux-navigator"
+              '';
+            }
+            {
+              plugin = continuum;
+              extraConfig = ''
+                set -g @plugin "tmux-plugins/tmux-continuum"
+                set -g @continuum-restore 'on'
+              '';
+            }
+            {
+              plugin = resurrect;
+              extraConfig = ''
+                set -g @plugin 'tmux-plugins/tmux-resurrect'
+              '';
+            }
           ];
           extraConfig = ''
             unbind C-b
