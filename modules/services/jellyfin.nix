@@ -12,7 +12,7 @@
       ];
     };
 
-    fileSystems."/var/lib/jellyfin/media/" = {
+    fileSystems."/var/lib/jellyfin/media" = {
       device = "/home/${config.settings.username}/Videos/jellyfin";
       fsType = "none";
       options = [
