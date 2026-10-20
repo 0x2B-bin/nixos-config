@@ -97,7 +97,6 @@
             set -g pane-active-border-style 'fg=yellow'
 
             bind r source-file ~/.config/tmux/tmux.conf
-            source-file ~/.config/tmux/tmux-colors.conf
           '';
         };
       };
