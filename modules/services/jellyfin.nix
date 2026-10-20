@@ -13,7 +13,7 @@
     };
 
     fileSystems."/var/lib/jellyfin/media/anime" = {
-      device = "/home/${config.settings.username}/Videos/anime";
+      device = "/home/${config.settings.username}/Videos/jellyfin";
       fsType = "none";
       options = [
         "bind"
