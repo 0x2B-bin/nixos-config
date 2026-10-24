@@ -5,7 +5,7 @@
     imports = with self.nixosModules; [
       common-profile
       desktop-packages
-      gaming-packages
+      gaming-profile
       noctalia-greeter 
       plymouth
       pipewire

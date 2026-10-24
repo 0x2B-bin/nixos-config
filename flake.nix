@@ -83,6 +83,11 @@
         url = "git+https://codeberg.org/0x2B/anisync.git";
         inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    galmuri14 = {
+        url = "git+ssh://git@github.com/0x2B-bin/galmuri14-nix.git";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

@@ -209,9 +209,10 @@ theme = "Adwaita"
 "XF86AudioPlay" = "spawn:playerctl play-pause"
 "XF86AudioNext" = "spawn:playerctl next"
 "XF86AudioPrev" = "spawn:playerctl previous"
+
+# Brightness
 "XF86MonBrightnessUp" = "spawn:brightnessctl set +5%"
 "XF86MonBrightnessDown" = "spawn:brightnessctl set 5%-"
-
 
 "Print" = "spawn:noctalia msg screenshot-region"
 "Mod+Shift+S" = "spawn:noctalia msg screenshot-region"

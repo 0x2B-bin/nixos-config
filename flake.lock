@@ -81,6 +81,26 @@
         "type": "github"
       }
     },
+    "galmuri14": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1792772386,
+        "narHash": "sha256-lk4VPCEp0DDa1XYUWNsb2LXG6rYCoSoUnuJgVngevvA=",
+        "ref": "refs/heads/main",
+        "rev": "9df5e920f13036c8fbe94772abbfaf7bca7b65a9",
+        "revCount": 1,
+        "type": "git",
+        "url": "ssh://git@github.com/0x2B-bin/galmuri14-nix.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/0x2B-bin/galmuri14-nix.git"
+      }
+    },
     "grub-themes": {
       "inputs": {
         "flake-parts": [
@@ -406,6 +426,7 @@
         "anisync": "anisync",
         "auc-flake": "auc-flake",
         "flake-parts": "flake-parts",
+        "galmuri14": "galmuri14",
         "grub-themes": "grub-themes",
         "hatsune-miku-cursors": "hatsune-miku-cursors",
         "henshin": "henshin",

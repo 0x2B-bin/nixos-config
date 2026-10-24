@@ -12,6 +12,7 @@
         openssl
         curl
         expat
+        libvlc
       ];
     };
 }
