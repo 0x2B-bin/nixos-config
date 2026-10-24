@@ -33,6 +33,10 @@
             User ${osConfig.settings.username}
             IdentityFile ~/.ssh/keys/tailless
 
+          Host limbus
+            User ${osConfig.settings.username}
+            IdentityFile ~/.ssh/keys/limbus
+
           Host nazuna
             User ${osConfig.settings.username}
             IdentityFile ~/.ssh/keys/nazuna
