@@ -23,18 +23,23 @@
 
           Host yorha
             User ${osConfig.settings.username}
+            IdentityFile ~/.ssh/keys/yorha
 
           Host oracle
             User ${osConfig.settings.username}
+            IdentityFile ~/.ssh/keys/oracle
 
           Host tailless
             User ${osConfig.settings.username}
+            IdentityFile ~/.ssh/keys/tailless
 
           Host nazuna
             User ${osConfig.settings.username}
+            IdentityFile ~/.ssh/keys/nazuna
 
           Host eve
             User ${osConfig.settings.username}
+            IdentityFile ~/.ssh/keys/eve
         '';
       };
     };
