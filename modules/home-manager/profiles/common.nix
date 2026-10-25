@@ -14,6 +14,7 @@
       direnv
       btop
       ranger
+      rclone
     ];
   };
 }
