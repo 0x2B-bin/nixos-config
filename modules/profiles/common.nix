@@ -15,7 +15,6 @@
 
     time.timeZone = "America/New_York";
 
-    /*
     environment.etc."gai.conf".text = ''
       precedence ::ffff:0:0/96 100
     '';
@@ -29,6 +28,5 @@
       "net.ipv6.conf.all.disable_ipv6" = 1;
       "net.ipv6.conf.default.disable_ipv6" = 1;
     };
-    */
   };
 }
