@@ -29,6 +29,8 @@
         tailscale
         rtorrent
         samba
+        exfatprogs
+        rsync
         #self.packages."${pkgs.stdenv.hostPlatform.system}".fhs
         gcc
         gnumake
