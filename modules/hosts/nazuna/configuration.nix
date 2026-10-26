@@ -26,6 +26,15 @@
       services.auc.gitlab-runner.enable = true;
       programs.auc.git.enable = true;
 
+      networking.firewall.allowedUDPPorts = [ 40000 ];
+
+      boot.kernel.sysctl = {
+        "net.ipv4.ip_forward" = 1;
+        "net.ipv6.conf.all.forwarding" = 1;
+        "net.core.rmem_max" = 26214400;
+        "net.core.wmem_max" = 26214400;
+      };
+
       users.users.${config.settings.username}= {
         extraGroups = [ "developer" ];
         linger = true;
