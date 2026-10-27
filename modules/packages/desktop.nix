@@ -5,6 +5,7 @@
 
       imports = [
         inputs.noctalia.nixosModules.default
+        inputs.umbriel.nixosModules.default
       ];
 
       environment.systemPackages = with pkgs; [
