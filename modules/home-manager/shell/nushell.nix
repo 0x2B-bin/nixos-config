@@ -2,6 +2,7 @@
   flake.homeModules.nushell = {
     programs.nushell = {
       enable = true;
+      loadSessionVariables = true;
 
       shellAliases = {
         c = "clear";
