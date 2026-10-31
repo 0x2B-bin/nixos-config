@@ -13,7 +13,7 @@
         aseprite
         audacity
         nwg-look
-        element-desktop
+        cinny-desktop
         qFlipper
         networkmanagerapplet
         pavucontrol

@@ -24,10 +24,13 @@
       open = true;
 
       prime = {
+        sync.enable = true;
+        /*
         offload = {
           enable = true;
           enableOffloadCmd = true;
         };
+        */
         nvidiaBusId = "PCI:195@0:0:0";
         amdgpuBusId = "PCI:194@0:0:0";
       };
@@ -42,6 +45,7 @@
       MatchProduct=0x4812
       MatchUdevType=touchpad
       AttrEventCode=-ABS_MT_PRESSURE;-ABS_PRESSURE
+      ModelBouncingKeys=1
     '';
 
     boot.extraModprobeConfig = ''
