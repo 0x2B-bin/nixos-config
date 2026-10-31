@@ -9,6 +9,7 @@
         #pcsx2; add back in later, build error
         gamescope
         lunar-client
+        protontricks
       ];
 
       programs = {
