@@ -10,6 +10,7 @@
         gamescope
         lunar-client
         protontricks
+        lutris-unwrapped
       ];
 
       programs = {
