@@ -15,6 +15,7 @@
         nwg-look
         cinny-desktop
         qFlipper
+        obsidian
         networkmanagerapplet
         pavucontrol
         ffmpeg
