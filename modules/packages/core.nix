@@ -51,6 +51,15 @@
       ];
 
       programs.zsh.enable = true;
-      virtualisation.docker.enable = true;
+      virtualisation.docker = {
+        enable = true;
+        logDriver = "json-file";
+        daemon.settings = {
+          log-opts = {
+            max-file = "3";
+            max-size = "10m";
+          };
+        };
+      };
     };
 }
