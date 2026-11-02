@@ -49,6 +49,7 @@
         quickshell
         inputs.henshin.packages."${pkgs.stdenv.hostPlatform.system}".default
         inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
+        inputs.sable-next.packages."${pkgs.stdenv.hostPlatform.system}".sable-desktop
         inputs.hatsune-miku-cursors.packages."${pkgs.stdenv.hostPlatform.system}".default
         inputs.anicursors.packages."${pkgs.stdenv.hostPlatform.system}".default
       ];

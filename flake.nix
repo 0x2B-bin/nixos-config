@@ -29,6 +29,11 @@
       inputs.home-manager.follows = "home-manager";
     };
 
+    sable-next = {
+      url = "git+https://git.sable.moe/SableClient/sable-next";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     snapsr = {
       url = "github:0x2B-bin/snapsr";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -439,10 +439,31 @@
         "noctalia-greeter": "noctalia-greeter",
         "pwngdb": "pwngdb",
         "qylock": "qylock",
+        "sable-next": "sable-next",
         "snapsr": "snapsr",
         "ufbt": "ufbt",
         "umbriel": "umbriel",
         "zen-browser": "zen-browser"
+      }
+    },
+    "sable-next": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1793571889,
+        "narHash": "sha256-U6OwiKDmg6ro93zNFpcdoUflyh3FXqGNoUoGIQllXyk=",
+        "ref": "refs/heads/main",
+        "rev": "3d034cd0ad6224631ff6a3b20a35bada82c049c9",
+        "revCount": 7247,
+        "type": "git",
+        "url": "https://git.sable.moe/SableClient/sable-next"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.sable.moe/SableClient/sable-next"
       }
     },
     "snapsr": {
