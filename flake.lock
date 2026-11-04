@@ -30,11 +30,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790183577,
-        "narHash": "sha256-UrOwBZERIxMU7YPnLjIK3BtiQwndTjPhkz5wD8klkng=",
+        "lastModified": 1793639762,
+        "narHash": "sha256-QffSe6yxZLqKTvDQ9VrOsj/wSJpSY/bcdGGhWCj6lws=",
         "ref": "refs/heads/main",
-        "rev": "c83f7fea42978ec3b92b3da176c555ab0c14af06",
-        "revCount": 33,
+        "rev": "6d5e88ad8150fea79e769ba4ef9e1bbb426202f5",
+        "revCount": 36,
         "type": "git",
         "url": "https://codeberg.org/0x2B/anisync.git"
       },
