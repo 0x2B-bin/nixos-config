@@ -11,6 +11,7 @@
         lunar-client
         protontricks
         lutris-unwrapped
+        sunshine
       ];
 
       programs = {

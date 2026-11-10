@@ -16,6 +16,7 @@
         desktop-profile
         remote-builder
         binary-cache-server
+        sunshine
       ];
 
       services.remoteBuilder = {
