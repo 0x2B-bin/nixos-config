@@ -1,27 +1,15 @@
 [bar.default]
 capsule = true
-end = [
-    "tray",
-    "notifications",
-    "clipboard",
-    "network",
-    "bluetooth",
-    "volume",
-    "brightness",
-    "battery",
-    "group:g1",
-    "control-center",
-    "session"
-]
+end = [ "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "group:g1", "control-center", "session" ]
 font_family = "JetBrains Mono"
 icon_color = "primary"
-start = [ "launcher", "wallpaper", "workspaces", "media" ]
+start = [ "launcher", "wallpaper", "workspaces", "media", "notifications" ]
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
     enabled = true
-    fill = "surface_variant"
+    fill = "surface_container"
     id = "g1"
     members = [ "cpu", "ram" ]
     opacity = 1.0
@@ -35,6 +23,24 @@ hidden_tabs = [ "weather", "screen-time" ]
 
     [control_center.calendar]
     show_events_card = false
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+    [[control_center.shortcuts]]
+    type = "noctalia/wallhaven:shortcut"
 
 [desktop_widgets]
 schema_version = 2
@@ -57,11 +63,15 @@ wallpaper_changed = "/home/nate/.config/noctalia/scripts/wallpaper.sh"
 enabled = true
 schema_version = 2
 widget_order = [
+    "lockscreen-widget-0000000000000004",
     "lockscreen-login-box@WL-1",
     "lockscreen-login-box@eDP-1",
     "lockscreen-login-box@HDMI-A-1",
     "lockscreen-login-box@DP-1",
-    "lockscreen-widget-0000000000000001"
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-0000000000000005"
 ]
 
     [lockscreen_widgets.grid]
@@ -81,7 +91,7 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -92,6 +102,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -108,7 +119,7 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -119,6 +130,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -135,7 +147,7 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -146,34 +158,36 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
-    box_height = 196.0
+    box_height = 150.0
     box_width = 810.0
-    cx = 960.0
-    cy = 898.0
+    cx = 963.0
+    cy = 1014.0
     output = "eDP-1"
-    placement_height = 1080.0
+    placement_height = 1200.0
     placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
         input_opacity = 1.0
-        input_radius = 6.0
+        input_radius = 12.0
         layout = "regular"
         show_caps_lock = true
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
-        show_session_buttons = true
+        show_password_reveal = true
+        show_session_buttons = false
         show_unlock_hint = true
         show_weather = true
 
@@ -188,8 +202,70 @@ widget_order = [
     rotation = 0.0
     type = "clock"
 
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 224.0
+    box_width = 352.0
+    cx = 960.0
+    cy = 360.0
+    output = "eDP-1"
+    placement_height = 1200.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background_opacity = 0.0
+        clock_style = "digital"
+        font_family = ""
+        shadow = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 128.0
+    box_width = 224.0
+    cx = 832.0
+    cy = 552.0
+    output = "eDP-1"
+    placement_height = 1200.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background_color = "surface_container_high"
+        background_opacity = 0.91000000000000003
+        stat = "cpu_usage"
+        stat2 = "cpu_temp"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 384.0
+    box_width = 512.0
+    cx = 960.0
+    cy = 456.0
+    output = "eDP-1"
+    placement_height = 1200.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        title = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 128.0
+    box_width = 224.0
+    cx = 1088.0
+    cy = 552.0
+    output = "eDP-1"
+    placement_height = 1200.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "volume"
+
 [osd]
 position = "bottom_center"
+
+[plugins]
+enabled = [ "noctalia/wallhaven" ]
 
 [shell]
 avatar_path = "/home/nate/.config/noctalia/avatars/2b.jpg"
@@ -207,6 +283,7 @@ polkit_agent = true
 
     [shell.panel]
     launcher_placement = "attached"
+    wallpaper_show_names = false
 
     [shell.screen_corners]
     enabled = true
@@ -226,6 +303,7 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4", "umbriel" ]
+    community_ids = [ "obsidian" ]
 
 [wallpaper]
 directory = "/home/nate/Wallpapers"
@@ -233,19 +311,19 @@ enabled = true
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/nate/Wallpapers/made_in_abyss_4.png"
+    path = "/home/nate/Wallpapers/wallhaven-9oxme1.jpg"
 
     [wallpaper.last]
-    path = "/home/nate/Wallpapers/made_in_abyss_4.png"
+    path = "/home/nate/Wallpapers/wallhaven-9oxme1.jpg"
 
     [wallpaper.monitors.DP-1]
     path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
+    path = "/home/nate/Wallpapers/made_in_abyss_2.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/nate/Wallpapers/made_in_abyss_4.png"
+    path = "/home/nate/Wallpapers/wallhaven-9oxme1.jpg"
 
 [widget.audio_visualizer]
 color_2 = "on_primary"
@@ -256,8 +334,11 @@ enabled = false
 [widget.clipboard]
 enabled = false
 
+[widget.control-center]
+glyph = "home"
+
 [widget.tray]
-enabled = false
+enabled = true
 
 [widget.workspaces]
 focused_output_only = true
