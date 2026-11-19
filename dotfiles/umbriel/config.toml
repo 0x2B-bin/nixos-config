@@ -273,7 +273,7 @@ default_pinned = true
 
 [[window_rule]]
 match.title = "Discord"
-opacity = 0.9
+opacity = 0.95
 
 # Named scratchpads can launch an application when toggled while empty.
 # [[scratchpad]]

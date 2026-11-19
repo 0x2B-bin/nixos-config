@@ -34,6 +34,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    millennium = {
+      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     snapsr = {
       url = "github:0x2B-bin/snapsr";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -1,9 +1,10 @@
 {
   flake.nixosModules.gaming-packages =
-    { pkgs, ... }:
+    { pkgs, inputs, ... }:
     {
+      nixpkgs.overlays = [ inputs.millennium.overlays.default ];
+
       environment.systemPackages = with pkgs; [
-        steam
         osu-lazer-bin
         protonplus
         #pcsx2; add back in later, build error
@@ -24,7 +25,10 @@
       ];
 
       programs = {
-        steam.enable = true;
+        steam = {
+          enable = true;
+          package = pkgs.millennium-steam;
+        };
         gamescope.enable = true;
       };
     };
