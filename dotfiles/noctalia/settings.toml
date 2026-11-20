@@ -71,7 +71,8 @@ widget_order = [
     "lockscreen-widget-0000000000000001",
     "lockscreen-widget-0000000000000002",
     "lockscreen-widget-0000000000000003",
-    "lockscreen-widget-0000000000000005"
+    "lockscreen-widget-0000000000000005",
+    "lockscreen-widget-0000000000000006"
 ]
 
     [lockscreen_widgets.grid]
@@ -102,6 +103,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -130,6 +132,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -158,6 +161,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -186,6 +190,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = false
         show_unlock_hint = true
@@ -261,6 +266,23 @@ widget_order = [
     rotation = 0.0
     type = "volume"
 
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
+    box_height = 48.0
+    box_width = 304.0
+    cx = 960.0
+    cy = 440.0
+    output = "eDP-1"
+    placement_height = 1200.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
+        background = false
+        clock_style = "digital"
+        format = "%a, %b %-d"
+        shadow = true
+
 [osd]
 position = "bottom_center"
 
@@ -302,8 +324,8 @@ source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "gtk4", "umbriel" ]
-    community_ids = [ "obsidian" ]
+    builtin_ids = [ "gtk3", "gtk4", "qt", "umbriel" ]
+    community_ids = [ "zen-browser", "discord", "sable", "obsidian", "steam" ]
 
 [wallpaper]
 directory = "/home/nate/Wallpapers"
@@ -311,10 +333,10 @@ enabled = true
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/nate/Wallpapers/wallhaven-9oxme1.jpg"
+    path = "/home/nate/Wallpapers/made_in_abyss_2.png"
 
     [wallpaper.last]
-    path = "/home/nate/Wallpapers/wallhaven-9oxme1.jpg"
+    path = "/home/nate/Wallpapers/made_in_abyss_2.png"
 
     [wallpaper.monitors.DP-1]
     path = "/home/nate/Wallpapers/Kurumi/kurumi_2.png"
@@ -323,7 +345,7 @@ transition_on_startup = true
     path = "/home/nate/Wallpapers/made_in_abyss_2.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/nate/Wallpapers/wallhaven-9oxme1.jpg"
+    path = "/home/nate/Wallpapers/made_in_abyss_2.png"
 
 [widget.audio_visualizer]
 color_2 = "on_primary"
