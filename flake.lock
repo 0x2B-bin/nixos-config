@@ -205,6 +205,26 @@
         "type": "github"
       }
     },
+    "luciole": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1795182739,
+        "narHash": "sha256-sVoZBkWeY7AEabS2D0VMLxCbgVZDiU1i7l/CIMYKyec=",
+        "owner": "noctalia-dev",
+        "repo": "luciole",
+        "rev": "93df3103207976daa5b880a101185303a4af9e6f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "luciole",
+        "type": "github"
+      }
+    },
     "mikuPlymouth": {
       "inputs": {
         "nixpkgs": [
@@ -489,6 +509,7 @@
         "henshin": "henshin",
         "home-manager": "home-manager",
         "import-tree": "import-tree",
+        "luciole": "luciole",
         "mikuPlymouth": "mikuPlymouth",
         "millennium": "millennium",
         "nixos-hardware": "nixos-hardware",

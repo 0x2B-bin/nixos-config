@@ -8,6 +8,11 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     noctalia.url = "github:noctalia-dev/noctalia";
 
+    luciole = {
+        url = "github:noctalia-dev/luciole";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     noctalia-greeter = {
       url = "github:noctalia-dev/noctalia-greeter";
       inputs.nixpkgs.follows = "nixpkgs";

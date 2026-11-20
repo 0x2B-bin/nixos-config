@@ -6,6 +6,7 @@
       imports = [
         inputs.noctalia.nixosModules.default
         inputs.umbriel.nixosModules.default
+        inputs.luciole.nixosModules.default
       ];
 
       environment.systemPackages = with pkgs; [
@@ -58,6 +59,7 @@
 
       programs = {
         firefox.enable = true;
+        luciole.enable = true;
         niri.enable = true;
         umbriel.enable = true;
         xwayland.enable = true;
@@ -67,5 +69,7 @@
           recommendedServices.enable = true;
         };
       };
+
+      services.gvfs.enable = true;
     };
 }
