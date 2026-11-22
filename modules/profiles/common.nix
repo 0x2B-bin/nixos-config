@@ -4,7 +4,6 @@
     imports = with self.nixosModules; [
       core-packages
       openssh
-      resolved
       tailscale
       flipper
       users

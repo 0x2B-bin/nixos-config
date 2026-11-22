@@ -11,6 +11,7 @@
     {
       imports = with self.nixosModules; [
         server-profile
+        pihole
         inputs.auc-flake.nixosModules.gitlab-runner
         inputs.auc-flake.nixosModules.git
         inputs.auc-flake.nixosModules.packages

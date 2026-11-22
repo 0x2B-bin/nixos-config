@@ -1,10 +1,13 @@
 {
   flake.nixosModules.network-manager = {
-    config = {
-      networking.networkmanager = {
-        enable = true;
-        dns = "systemd-resolved";
-      };
+    networking.networkmanager = {
+      enable = true;
+      dns = "default";
     };
+    networking.resolvconf.enable = true;
+    networking.nameservers = [
+      "nazuna"
+      "9.9.9.9"
+    ];
   };
 }
