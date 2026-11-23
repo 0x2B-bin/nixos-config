@@ -10,7 +10,6 @@
           "mako/config".source = "${dotfiles}/mako/config";
           "niri/config.kdl".source = "${dotfiles}/niri/config.kdl";
           "hsn/config.toml".source = "${dotfiles}/hsn/config.toml";
-          "fastfetch/config.jsonc".source = "${dotfiles}/fastfetch/config.jsonc";
           "umbriel/config.toml".source = "${dotfiles}/umbriel/config.toml";
           nvim.source = "${dotfiles}/nvim";
           quickshell.source = "${dotfiles}/quickshell";

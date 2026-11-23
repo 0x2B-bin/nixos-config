@@ -15,7 +15,7 @@
         nushell
         wget
         neovim
-        fastfetch
+        self.packages."${pkgs.stdenv.hostPlatform.system}".fastfetch
         eza
         proton-vpn-cli
         tokei
