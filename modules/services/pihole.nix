@@ -4,10 +4,10 @@
       enable = true;
       lists = [
         {
-          url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt";
+          url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro-onlydomains.txt";
           type = "block";
           enabled = true;
-          description = "hagezi blocklist";
+          description = "Hagezi Blocklist";
         }
       ];
       settings = {
