@@ -2,6 +2,14 @@
   flake.nixosModules.pihole = {
     services.pihole-ftl = {
       enable = true;
+      lists = [
+        {
+          url = "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.txt";
+          type = "block";
+          enabled = true;
+          description = "hagezi blocklist";
+        }
+      ];
       settings = {
         dns = {
           listeningMode = "ALL";
