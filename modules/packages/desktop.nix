@@ -50,7 +50,9 @@
         brightnessctl
         adw-gtk3
         quickshell
-        self.packages."${pkgs.stdenv.hostPlatform.system}".kitty
+        (self.packages."${pkgs.stdenv.hostPlatform.system}".kitty.override {
+          includeTheme = true;
+        })
         inputs.henshin.packages."${pkgs.stdenv.hostPlatform.system}".default
         inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
         inputs.sable-next.packages."${pkgs.stdenv.hostPlatform.system}".sable-desktop
