@@ -2,7 +2,7 @@
 {
   flake.homeModules.desktop-profile = {
     imports = with self.homeModules; [
-      kitty
+      #kitty
       #easyeffects
       #doom-emacs
     ];

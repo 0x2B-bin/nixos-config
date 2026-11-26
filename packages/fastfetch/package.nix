@@ -7,7 +7,7 @@
   {
     packages.fastfetch = pkgs.symlinkJoin {
       name = "fastfetch-wrapped";
-      paths = with pkgs; [fastfetch ];
+      paths = with pkgs; [ fastfetch ];
       nativeBuildInputs = [ pkgs.makeWrapper ];
 
       postBuild = ''

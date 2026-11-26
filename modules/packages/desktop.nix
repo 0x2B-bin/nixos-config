@@ -1,3 +1,4 @@
+{ self, ... }:
 {
   flake.nixosModules.desktop-packages =
     { pkgs, inputs, ... }:
@@ -44,12 +45,12 @@
         adwaita-icon-theme
         wl-mirror
         wl-clipboard
-        kitty
         wpgtk
         wofi
         brightnessctl
         adw-gtk3
         quickshell
+        self.packages."${pkgs.stdenv.hostPlatform.system}".kitty
         inputs.henshin.packages."${pkgs.stdenv.hostPlatform.system}".default
         inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
         inputs.sable-next.packages."${pkgs.stdenv.hostPlatform.system}".sable-desktop
