@@ -3,7 +3,6 @@
   flake.nixosModules.limbus-configuration = { inputs, pkgs, ... }: {
     imports = with self.nixosModules; [
       desktop-profile
-      distributedBuilds
       binary-cache-client
     ];
 
