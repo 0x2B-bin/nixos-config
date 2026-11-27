@@ -2,12 +2,16 @@
 {
   flake.nixosModules.desktop-packages =
     { pkgs, inputs, ... }:
+    let
+      spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+    in
     {
 
       imports = [
         inputs.noctalia.nixosModules.default
         inputs.umbriel.nixosModules.default
         inputs.luciole.nixosModules.default
+        inputs.spicetify-nix.nixosModules.default
       ];
 
       environment.systemPackages = with pkgs; [
@@ -26,9 +30,8 @@
         mpv
         wireshark
         postman
-        spotify
-        spicetify-cli
         obs-studio
+        spicetify-cli
         matugen
         wallust
         qbittorrent
@@ -72,6 +75,22 @@
         noctalia = {
           enable = true;
           recommendedServices.enable = true;
+        };
+        spicetify = {
+          enable = true;
+          theme = {
+            name = "comfy";
+            src = spicePkgs.themes.comfy.src;
+            replaceColors = true;
+            injectCss = true;
+            overwriteAssets = true;
+            injectThemeJs = true;
+          };
+          colorScheme = "Comfy";
+          enabledExtensions = with spicePkgs.extensions; [
+            adblockify
+            hidePodcasts
+          ];
         };
       };
 
