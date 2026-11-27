@@ -200,10 +200,10 @@ theme = "Adwaita"
 "Mod+Ctrl+9" = "window-move-to-workspace 9"
 
 # Scratchpad
-"Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }
-"Mod+Space" = "scratchpad-toggle"
-"Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad", repeat = false }
-"Mod+Tab" = "scratchpad-focus-next"
+"Mod+Shift+Space" = { action = "window-move-to-scratchpad general", repeat = false }
+"Mod+Space" = "scratchpad-toggle general"
+"Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad general", repeat = false }
+"Mod+Tab" = "scratchpad-focus-next general"
 
 # Volume
 "XF86AudioRaiseVolume" = "spawn wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
@@ -275,8 +275,9 @@ default_pinned = true
 match.title = "Discord"
 opacity = 0.95
 
-# Named scratchpads can launch an application when toggled while empty.
-# [[scratchpad]]
+[[scratchpad]]
+name = "general"
+
 # name = "music"
 # spawn_when_empty = "spotify"
 
