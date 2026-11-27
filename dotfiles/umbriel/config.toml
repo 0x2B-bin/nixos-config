@@ -277,6 +277,7 @@ opacity = 0.95
 
 [[scratchpad]]
 name = "general"
+layout.mode = "scrolling"
 
 # name = "music"
 # spawn_when_empty = "spotify"
