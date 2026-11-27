@@ -26,6 +26,8 @@
         mpv
         wireshark
         postman
+        spotify
+        spicetify-cli
         obs-studio
         matugen
         wallust
